@@ -1,0 +1,44 @@
+<<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Game of 21!</title>
+    <style>
+        body {
+            background-color: lightblue;
+            text-align: center;
+            font-family: Arial;
+        }
+        #gameArea {
+            background-color: white;
+            margin: 20px auto;
+            padding: 20px;
+            width: 300px;
+            border-radius: 10px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <!-- This is where the game will show -->
+    <div id="gameArea"></div>
+
+    <!-- Game buttons -->
+    <button onclick="hitMe()">Hit Me!</button>
+    <button onclick="stay()">Stay</button>
+    <button onclick="newGame()">New Game</button>
+
+    <!-- Link to our JavaScript file -->
+    <script src="gameBehavor.js"></script>
+</body>
+</html>
